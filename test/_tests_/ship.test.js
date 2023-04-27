@@ -17,4 +17,9 @@ describe("Ship", () => {
     const ship = new ShipClass("Dover");
     expect(ship.startingPort).toBe("Dover");
   });
+  it("can set sail", () => {
+    const ship = new ShipClass("Dover");
+    ship.setSail();
+    expect(ship.startingPort).toBeFalsy();
+  });
 });
